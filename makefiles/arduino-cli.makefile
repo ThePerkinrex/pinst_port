@@ -26,6 +26,6 @@ else
 endif
 
 install:
-	@$(UNPACK_COMM) "arduino-cli-$(ARDUINO_VERSION)-$(OS_VERSION)$(PACK)"
-	@mv "arduino-cli-$(ARDUINO_VERSION)-$(OS_VERSION)" "arduino-cli"
-	@rm "arduino-cli-$(ARDUINO_VERSION)-$(OS_VERSION)$(PACK)"
+	@$(UNPACK_COMM) "$(PWD)/arduino-cli-$(ARDUINO_VERSION)-$(OS_VERSION)$(PACK)"
+	@mv "$(PWD)/arduino-cli-$(ARDUINO_VERSION)-$(OS_VERSION)" "arduino-cli"
+	@rm "$(PWD)/arduino-cli-$(ARDUINO_VERSION)-$(OS_VERSION)$(PACK)"
