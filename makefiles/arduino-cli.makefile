@@ -28,4 +28,8 @@ endif
 install:
 	@$(UNPACK_COMM) "$(PWD)/arduino-cli-$(ARDUINO_VERSION)-$(OS_VERSION)$(PACK)"
 	@mv "$(PWD)/arduino-cli-$(ARDUINO_VERSION)-$(OS_VERSION)" "arduino-cli"
-	@rm "$(PWD)/arduino-cli-$(ARDUINO_VERSION)-$(OS_VERSION)$(PACK)"
+	@rm "$(PWD)/arduino-cli-$(ARDUINO_VERSION)-osx.zip"
+	@rm "$(PWD)/arduino-cli-$(ARDUINO_VERSION)-linux64.tar.bz2"
+	@rm "$(PWD)/arduino-cli-$(ARDUINO_VERSION)-linux32.tar.bz2p"
+	@rm "$(PWD)/arduino-cli-$(ARDUINO_VERSION)-linuxarm.tar.bz2"
+	@rm "$(PWD)/arduino-cli-$(ARDUINO_VERSION)-windows.zip"
