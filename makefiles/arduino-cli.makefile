@@ -2,6 +2,8 @@ ARDUINO_VERSION = 0.2.1-alpha.preview
 OS_VERSION := ""
 UNPACK_COMM := "tar xvjf"
 PACK := ".tar.bz2"
+mkfile_path := $(abspath $(lastword $(MAKEFILE_LIST)))
+current_dir := $(notdir $(patsubst %/,%,$(dir $(mkfile_path))))
 ifeq ($(OS),Windows_NT)
 	err not for windows
 else
@@ -26,10 +28,10 @@ else
 endif
 
 install:
-	@$(UNPACK_COMM) "$(PWD)/arduino-cli-$(ARDUINO_VERSION)-$(OS_VERSION)$(PACK)"
-	@mv "$(PWD)/arduino-cli-$(ARDUINO_VERSION)-$(OS_VERSION)" "arduino-cli"
-	@rm "$(PWD)/arduino-cli-$(ARDUINO_VERSION)-osx.zip"
-	@rm "$(PWD)/arduino-cli-$(ARDUINO_VERSION)-linux64.tar.bz2"
-	@rm "$(PWD)/arduino-cli-$(ARDUINO_VERSION)-linux32.tar.bz2p"
-	@rm "$(PWD)/arduino-cli-$(ARDUINO_VERSION)-linuxarm.tar.bz2"
-	@rm "$(PWD)/arduino-cli-$(ARDUINO_VERSION)-windows.zip"
+	@$(UNPACK_COMM) "$(current_dir)/arduino-cli-$(ARDUINO_VERSION)-$(OS_VERSION)$(PACK)"
+	@mv "$(current_dir)/arduino-cli-$(ARDUINO_VERSION)-$(OS_VERSION)" "arduino-cli"
+	@rm "$(current_dir)/arduino-cli-$(ARDUINO_VERSION)-osx.zip"
+	@rm "$(current_dir)/arduino-cli-$(ARDUINO_VERSION)-linux64.tar.bz2"
+	@rm "$(current_dir)/arduino-cli-$(ARDUINO_VERSION)-linux32.tar.bz2p"
+	@rm "$(current_dir)/arduino-cli-$(ARDUINO_VERSION)-linuxarm.tar.bz2"
+	@rm "$(current_dir)/arduino-cli-$(ARDUINO_VERSION)-windows.zip"
