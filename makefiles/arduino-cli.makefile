@@ -2,7 +2,7 @@ ARDUINO_VERSION = 0.2.1-alpha.preview
 
 install:
 	ifeq ($(OS),Windows_NT)
-    	info TODO make for windows
+		info Not for windows
 	else
 	    UNAME_S := $(shell uname -s)
 	    ifeq ($(UNAME_S),Linux)
