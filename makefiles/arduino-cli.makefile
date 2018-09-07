@@ -35,3 +35,4 @@ install:
 	@rm "$(current_dir)/arduino-cli-$(ARDUINO_VERSION)-linux32.tar.bz2p"
 	@rm "$(current_dir)/arduino-cli-$(ARDUINO_VERSION)-linuxarm.tar.bz2"
 	@rm "$(current_dir)/arduino-cli-$(ARDUINO_VERSION)-windows.zip"
+	// Edit so that github updates
