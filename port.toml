@@ -2,23 +2,22 @@
 dependencies = []
 content  = []
 makefile = "makefiles/rust.makefile"
+version = "installer"
 
 [homebrew]
 dependencies = []
 content  = []
 makefile = "makefiles/homebrew.makefile"
+version = "installer"
 
 [arduino-cli]
 dependencies = []
 content  = ["http://downloads.arduino.cc/arduino-cli/arduino-cli-0.2.1-alpha.preview-linux64.tar.bz2", "http://downloads.arduino.cc/arduino-cli/arduino-cli-0.2.1-alpha.preview-linux32.tar.bz2", "http://downloads.arduino.cc/arduino-cli/arduino-cli-0.2.1-alpha.preview-linuxarm.tar.bz2", "http://downloads.arduino.cc/arduino-cli/arduino-cli-0.2.1-alpha.preview-windows.zip", "http://downloads.arduino.cc/arduino-cli/arduino-cli-0.2.1-alpha.preview-osx.zip"]
 makefile = "makefiles/arduino-cli.makefile"
+version = "v0.2.1-alpha"
 
 [bat]
 dependencies = ["rust"]
 content = ["https://github.com/sharkdp/bat/archive/v0.7.0.tar.gz"]
 makefile = "makefiles/bat.makefile"
-
-[dtest]
-dependencies = ["test"]
-content = []
-makfile = "makefiles/dtest.makefile"
+version = "v0.7.0"
