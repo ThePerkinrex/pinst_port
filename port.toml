@@ -21,3 +21,9 @@ dependencies = ["rust"]
 content = ["https://github.com/sharkdp/bat/archive/v0.7.0.tar.gz"]
 makefile = "makefiles/bat.makefile"
 version = "v0.7.0"
+
+[pinst]
+dependencies = ["rust"]
+content = ["https://github.com/ThePerkinrex/pinst/archive/v0.2.0-alpha.tar.gz"]
+makefile = "makefiles/pinst.makefile"
+version = "v0.2.0-alpha"
