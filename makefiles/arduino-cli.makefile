@@ -1,4 +1,4 @@
-ARDUINO_VERSION = 0.2.1-alpha.preview
+ARDUINO_VERSION = 0.2.2-alpha.preview
 OS_VERSION :=
 UNPACK_COMM := tar xvjf
 PACK := .tar.bz2
